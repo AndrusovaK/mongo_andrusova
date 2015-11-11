@@ -12,19 +12,21 @@
 	<!--header-->
 	<header class="page-header">
 		<div class="container">
-			<a href="index.html" class="logo left">
-				<p class="logo-brand">Монгольфьеркин и КО</p>
-			</a>
-			<nav class="main-nav right">
-				<ul class="right">
-					<li><a href="#" class="active">Кто мы</a></li>
-					<li><a href="#">Фотографии</a></li>
-					<li><a href="#">План полета</a></li>
-					<li><a href="#">Заказать</a></li>
-					<li><a href="#">Команда</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-			</nav>
+			<div class="row">
+				<a href="index.html" class="logo left">
+					<p class="logo-brand">Монгольфьеркин и КО</p>
+				</a>
+				<nav class="main-nav right">
+					<ul class="right">
+						<li><a href="#" class="active">Кто мы</a></li>
+						<li><a href="#">Фотографии</a></li>
+						<li><a href="#">План полета</a></li>
+						<li><a href="#">Заказать</a></li>
+						<li><a href="#">Команда</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	</header>
 <!--Header-->
@@ -35,26 +37,32 @@
 <!--Промоблок-->
 		<div class="promo"> 
 			<div class="container">
-				<h1 class="promo-title">Организация полетов на воздушных шарах</h1>
-				<a href="#" class="promo-btn">Подробнее</a>
+				<h1 class="promo-title center">Организация полетов на воздушных шарах</h1>
+				<a href="#" class="promo-btn center">Подробнее</a>
 			</div>
 		</div>
 <!--Промоблок-->
 	
 <!--Промоблок. Преимущества-->			
-		<div class="promo-items">
+		<div class="advantages">
 			<div class="container">
-				<div class="promo-item_new left">
-					<p>Современный надежный шар</p>
-				</div>
-				<div class="promo-item_learn left">
-					<p>Обучение пилотированию</p>
-				</div>
-				<div class="promo-item_photo left">
-					<p>Фотосъемка в полете</p>
-				</div>
-				<div class="promo-item_sights left">
-					<p>Потрясающие виды</p>
+				<div class="row">
+					<div class="advantage-item col3">
+						<img src="" alt="">
+						<p>Современный надежный шар</p>
+					</div>
+					<div class="advantage-item col3">
+						<img src="" alt="">
+						<p>Обучение пилотированию</p>
+					</div>
+					<div class="advantage-item col3">
+						<img src="" alt="">
+						<p>Фотосъемка в полете</p>
+					</div>
+					<div class="advantage-item col3">
+						<img src="" alt="">
+						<p>Потрясающие виды</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -63,13 +71,17 @@
 <!--Кто мы-->
 		<section class="about-us" id="">
 			<div class="container">
-				<div class="left">
-					<h2 class="section-title">Вкратце</h2>
-					<p class="about-us_text">Более 5 лет воздухоплавательная команда Нева-Аэро выполняет полёты на воздушных шарах для гостей и жителей Петербурга над одними из самых живописных мест России – Царским Селом и Павловском, возведенных в Пушкинском районе Санкт-Петербурга. </p>
-					<p class="about-us_text">Мы предлагаем полетать с нами!</p>
-				</div>
-				<div class="right">
-					<iframe src="" frameborder="0"></iframe>
+				<div class="row">
+					<div class="col4">
+						<h3 class="section-title left-underline">Вкратце</h3>
+						<p class="about-us_text">Более 5 лет воздухоплавательная команда Нева-Аэро выполняет полёты на воздушных шарах для гостей и жителей Петербурга над одними из самых живописных мест России – Царским Селом и Павловском, возведенных в Пушкинском районе Санкт-Петербурга. </p>
+						<p class="about-us_text">Мы предлагаем полетать с нами!</p>
+					</div>
+					<div class="col8">
+						<div class="video-container">
+							<iframe src="" frameborder="0"></iframe>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -78,21 +90,23 @@
 <!--Галерея-->	
 		<section class="gallery" id="">
 			<div class="container">
-				<h2 class="section-title">Галерея</h2>
+				<h3 class="section-title center">Галерея</h3>
 				<div class="carousel">
 	 				<div class="gallery_item"><img src="" alt=""></div>
 			 		<div class="gallery_item"><img src="" alt=""></div>
 			 		<div class="gallery_item"><img src="" alt=""></div>
-			 		<div class="gallery_item"><img src="" alt=""></div>		
+			 		<div class="gallery_item"><img src="" alt=""></div>
+			 		<div class="gallery_item"><img src="" alt=""></div>
+			 		<div class="gallery_item"><img src="" alt=""></div>			
 				</div>
 			</div>
 		</section>
 <!--Галерея-->
 	
 <!--Как проходят полеты-->	
-		<section class="how-fly" id="">
+		<section class="process" id="">
 			<div class="container">
-				<h2 class="section-title">Как проходят полеты</h2>
+				<h3 class="section-title center">Как проходят полеты</h3>
 				<div class="flight-stages">
 					<div class="flight-stage-item flight-stage-item1">
 						<p class="flight-stage-text"></p>
@@ -119,104 +133,135 @@
 						<span class="flight-stage-number"></span>
 					</div>
 				</div>
-				<div class="how-fly-count">
-					<h3 class="count-title left"></h3>
-					<div class="count-time right">
-	<!--Тут должен быть счетчик-->					
-					</div>
-				</div>
 			</div>
 		</section>
 <!--Как проходят полеты-->	
+	
+		<div class="timer">
+			<div class="container">
+				<div class="row">
+					<p class="count-title left">До ближайшего полета:</p>
+					<div class="count-time right">
+						<p><span>2</span> дня</p>
+						<p><span>16</span> часов</p>
+						<p><span>8</span> минут</p>
+						<p><span>14</span> секунд</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	
 	
 <!--Один контейнер для нескольких блоков-->
 		<div class="container">
 
 		<!--Рассчитать стоимость-->	
 			<section class="cost" id="">			
-				<div class="cost-info left">
-					<h2 class="section-title left-underline">Рассчитать стоимость</h2>
-					<p class="cost-text">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки.</p>
-					<p class="cost-text">Оболочка начинает заполняться теплым воздухом, и аэростат делает первый «вздох».</p>
-					<p class="cost-text">Выбирайте, куда мы полетим сегодня!</p>
+				<div class="row">
+					<div class="cost-info col6">
+						<h3 class="section-title left-underline">Рассчитать стоимость</h3>
+						<p class="cost-text">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки.</p>
+						<p class="cost-text">Оболочка начинает заполняться теплым воздухом, и аэростат делает первый «вздох».</p>
+						<p class="cost-text">Выбирайте, куда мы полетим сегодня!</p>
+					</div>
+					
+					<div class="cost-form col6">
+						<form action="" method="post">	
+							<p>
+								<label for="route-field">Маршрут полета</label>
+								<select name="route" id="route-field">
+									<option value="route1">Сестрорецк-Парнас</option>
+									<option value="route2">Всеволожск-Кудрово</option>
+									<option value="route3">Санкт-Петербург-Зеленогорск</option>
+									<option value="route4">Девяткино-Капеасалми</option>
+								</select>
+							</p>
+							
+							<p>
+								<label for="people-number-field">Количество человек</label>
+								<select name="people-number" id="people-number-field">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								</select>
+								
+								<label for="children-field">Из них дети</label>
+								<select name="children" id="children-field">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								</select>
+							</p>
+							
+							<p>
+								<label for="name-field">Имя и Фамилия</label>
+								<input type="text" name="name" id="name-field">
+							</p>
+							
+							<p>
+								<label for="phone-field">Телефон</label>
+								<input type="text" name="phone" id="phone-field">
+							</p>
+							<div>
+								<p>Стоимость<span>9000</span></p>
+								<button type="submit">Полетели!</button>
+							</div>					
+						</form>
+					</div>			
 				</div>
-				<div class="cost-form right">
-					<form action="" method="post">
-		<!--Тут должна быть разметка формы-->	
-						<label for="route-field">Маршрут полета</label>
-						<select name="route" id="route-field">
-							<option value="route1">Сестрорецк-Парнас</option>
-							<option value="route2">Всеволожск-Кудрово</option>
-							<option value="route3">Санкт-Петербург-Зеленогорск</option>
-							<option value="route4">Девяткино-Капеасалми</option>
-						</select>
-						
-						<label for="people-number-field">Количество человек</label>
-						<select name="people-number" id="people-number-field">
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-						</select>
-						
-						<label for="children-field">Из них дети</label>
-						<select name="children" id="children-field">
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-						</select>
-						
-						<label for="name-field">Имя и Фамилия</label>
-						<input type="text" name="name" id="name-field">
-						<label for="phone-field">Телефон</label>
-						<input type="text" name="phone" id="phone-field">
-						<p>Стоимость<span>9000</span></p>
-						<button type="submit">Полетели!</button>					
-					</form>
-				</div>			
 			</section>
 <!--Рассчитать стоимость-->	
+				
+			<div class="details">
+				<div class="row">
 		
-<!--Способы оплаты-->	
-			<section class="payments left">
-				<h2 class="section-title left-underline">Способы оплаты</h2>
-				<div class="cash">
-					<p class="payments-method">Наличными</p>
-					<p>Вы можете оплатить услугу,  приехав к нам в офис. Для этого Вам необходимо предупредить об этом:</p>
-					<p>— по телефону: +7 (812) 640-19-39<br>— или по почте: mnebyvnebo@gmail.com</p>
-					<p>Оплачивая услугу в офисе, Вы получаете все документы подтверждающие оплату.</p>
+		<!--Способы оплаты-->	
+					<div class="col6">
+						<section class="payments">
+							<h3 class="section-title left-underline">Способы оплаты</h3>
+							<div class="cash">
+								<p class="payments-method">Наличными</p>
+								<p>Вы можете оплатить услугу,  приехав к нам в офис. Для этого Вам необходимо предупредить об этом:</p>
+								<p>— по телефону: +7 (812) 640-19-39<br>— или по почте: mnebyvnebo@gmail.com</p>
+								<p>Оплачивая услугу в офисе, Вы получаете все документы подтверждающие оплату.</p>
+							</div>
+							<div class="courier">
+								<p class="payments-method">Курьеру</p>
+								<p>Вы можете оплатить услугу в любом районе города и в удобное время, вызвав курьера. Для этого Вам необходимо связаться с нашими сотрудниками и сообщить об этом:</p>
+								<p>— по телефону: +7 (812) 640-19-39,<br>— или по почте:<br>mnebyvnebo@gmail.com</p>
+								<p>Оплачивая услугу курьером, Вы получаете все документы подтверждающие оплату.</p>
+							</div>				
+						</section>	
+					</div>
+		<!--Способы оплаты-->	
+				
+		<!--Частые вопросы-->								
+					<div class="col6">
+						<section class="faq">
+							<h3 class="section-title left-underline">Частые вопросы</h3>
+							<div class="question">
+								<p class="question-title">Что взять с собой в полет?</p>
+								<p class="question-answer">Обязательно возьмите с собой теплую одежду и немного вкусной еды, которую не нужно разогревать, а еще термос горячим чаем. А мы обязательно дадим вам теплые пледы</p>
+							</div>
+							<div class="question">
+								<p class="question-title">Что если мы улетим не в ту сторону?</p>
+								<p class="question-answer">Каждый шар оснащен датчиками GPS, и все его перемещения фиксируются с точностью до метра, потеряться просто не получится. А наши пилоты такой ситуации не допустят вообще</p>
+							</div>
+							<div class="question">
+								<p class="question-title">Что делать, если в полете станет плохо?</p>
+								<p class="question-answer">В наших аптечках заготовлены в больших количествах разные лекарства, в том числе средства от укачивания, пакетики, а каждый пилот прошел специальную подготовку по оказанию первой помощи. В экстренной ситуациях сразу же совершим посадку. Мы не дадим вам оказаться в беде</p>
+							</div>
+							<div class="question">
+								<p class="question-title">А полет – это действительно так здорово?</p>
+								<p class="question-answer">Это в тысячу раз лучше шоколада</p>
+							</div>
+						</section>
+					</div>
+		<!--Частые вопросы-->
 				</div>
-				<div class="courier">
-					<p class="payments-method">Курьеру</p>
-					<p>Вы можете оплатить услугу в любом районе города и в удобное время, вызвав курьера. Для этого Вам необходимо связаться с нашими сотрудниками и сообщить об этом:</p>
-					<p>— по телефону: +7 (812) 640-19-39,<br>— или по почте:<br>mnebyvnebo@gmail.com</p>
-					<p>Оплачивая услугу курьером, Вы получаете все документы подтверждающие оплату.</p>
-				</div>				
-			</section>	
-<!--Способы оплаты-->	
-		
-<!--Частые вопросы-->								
-			<section class="faq right">
-				<h2 class="section-title left-underline"></h2>
-				<div class="question">
-					<p class="question-title">Что взять с собой в полет?</p>
-					<p class="question-answer">Обязательно возьмите с собой теплую одежду и немного вкусной еды, которую не нужно разогревать, а еще термос горячим чаем. А мы обязательно дадим вам теплые пледы</p>
-				</div>
-				<div class="question">
-					<p class="question-title">Что если мы улетим не в ту сторону?</p>
-					<p class="question-answer">Каждый шар оснащен датчиками GPS, и все его перемещения фиксируются с точностью до метра, потеряться просто не получится. А наши пилоты такой ситуации не допустят вообще</p>
-				</div>
-				<div class="question">
-					<p class="question-title">Что делать, если в полете станет плохо?</p>
-					<p class="question-answer">В наших аптечках заготовлены в больших количествах разные лекарства, в том числе средства от укачивания, пакетики, а каждый пилот прошел специальную подготовку по оказанию первой помощи. В экстренной ситуациях сразу же совершим посадку. Мы не дадим вам оказаться в беде</p>
-				</div>
-				<div class="question">
-					<p class="question-title">А полет – это действительно так здорово?</p>
-					<p class="question-answer">Это в тысячу раз лучше шоколада</p>
-				</div>
-			</section>
-<!--Частые вопросы-->			
+			</div>			
 			
 		</div>	
 <!--Один контейнер для нескольких блоков-->
@@ -224,21 +269,23 @@
 <!--Статистика-->
 		<section class="statistic">
 			<div class="container">
-				<div class="statistic-item left">
-					<span class="number-circle">700</span>
-					<p>Полетов в год</p>
-				</div>
-				<div class="statistic-item left">
-					<span class="number-circle">3000</span>
-					<p>Средняя дальность в метрах</p>
-				</div>
-				<div class="statistic-item left">
-					<span class="number-circle">3</span>
-					<p>Воздушных шара</p>
-				</div>
-				<div class="statistic-item left">
-					<span class="number-circle">12</span>
-					<p>Человек в команде</p>
+				<div class="row">
+					<div class="statistic-item col3">
+						<span class="number-circle">700</span>
+						<p>Полетов в год</p>
+					</div>
+					<div class="statistic-item col3">
+						<span class="number-circle">3000</span>
+						<p>Средняя дальность в метрах</p>
+					</div>
+					<div class="statistic-item col3">
+						<span class="number-circle">3</span>
+						<p>Воздушных шара</p>
+					</div>
+					<div class="statistic-item col3">
+						<span class="number-circle">12</span>
+						<p>Человек в команде</p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -248,27 +295,27 @@
 
 <!--Инструкторы-->
 			<section class="team">
-				<h2 class="section-title"></h2>
-				<div class="team-wrap">
-					<div class="team-member left">
+				<h3 class="section-title center">Команда инструкторов</h3>
+				<div class="row">
+					<div class="team-member col3">
 						<img src="" alt="">
 						<p class="member-name">Мария Мариева</p>
-						<span class="member-job">Старший пилот</span>
+						<p class="member-job">Старший пилот</p>
 					</div>
-					<div class="team-member left">
+					<div class="team-member col3">
 						<img src="" alt="">
 						<p class="member-name">Надежда Надеждова</p>
-						<span class="member-job">Второй пилот</span>
+						<p class="member-job">Второй пилот</p>
 					</div>
-					<div class="team-member left">
+					<div class="team-member col3">
 						<img src="" alt="">
 						<p class="member-name">Ирина Иринова</p>
-						<span class="member-job">Авиадиспетчер</span>
+						<p class="member-job">Авиадиспетчер</p>
 					</div>
-					<div class="team-member left">
+					<div class="team-member col3">
 						<img src="" alt="">
 						<p class="member-name">Алена Аленова</p>
-						<span class="member-job">Авиатехник</span>
+						<p class="member-job">Авиатехник</p>
 					</div>
 				</div>
 			</section>		
@@ -276,16 +323,16 @@
 	
 <!--Отзывы-->
 			<section class="reviews">
-				<h2 class="section-title">Отзывы</h2>
-				<div class="reviews-wrap">
-					<div class="review-item left">
+				<h3 class="section-title center">Отзывы</h3>
+				<div class="row">
+					<div class="review-item col6">
 						<img src="" alt="">
 						<blockquote>
 							<cite>Ольга Алексеева</cite>
 							<p>Оооо это было чудесно!!! Я не знала что воздушные шары такие огромные. Забавно, большой шар и маленькая корзинка. Полет восхитительный, выше всяких похвал. Мы побывали в самом красивом месте на Земле - в небе, оттуда открываются потрясающие виды.</p>
 						</blockquote>
 					</div>
-					<div class="review-item left">
+					<div class="review-item col6">
 						<img src="" alt="">
 						<blockquote>
 							<cite>Артем Рыбкин</cite>
@@ -300,23 +347,23 @@
 <!--Контакты-->		
 		<section class="contacts">
 			<div class="container">
-				<div class="airport">
+				<div class="airport center">
 					<img src="" alt="" class="logo-plane">
 					<p class="airport-title">Запишите адрес аэропорта</p>
 					<p class="airport-adress">Всеволожск, улица Аэродромная 19а</p>
 				</div>
-				<div class="contacts-wrap">
-					<div class="office left">
+				<div class="row">
+					<div class="office col4">
 						<p class="office-title">Наш офис в Питере</p>
 						<p class="office-address">Литейный 14Б<br>12:00 - 19:00</p>
 						<span class="office-phone">746-67-33</span>
 					</div>
-					<div class="office left">
+					<div class="office col4">
 						<p class="office-title">Наш офис во Всеволожске</p>
 						<p class="office-address">Аэродромная 19а<br>12:00 - 19:00</p>
 						<span class="office-phone">746-67-33</span>
 					</div>
-					<div class="internet left">
+					<div class="internet col4">
 						<a href=""></a>
 						<p class="socials">
 							<a href=""></a>
@@ -332,19 +379,21 @@
 <!--Footer-->
 	<footer class="page-footer">
 		<div class="container">
-			<a href="index.html" class="logo left">
-				<p class="logo-brand">Монгольфьеркин и КО</p>
-			</a>
-			<nav class="main-nav right">
-				<ul class="right">
-					<li><a href="#" class="active">Кто мы</a></li>
-					<li><a href="#">Фотографии</a></li>
-					<li><a href="#">План полета</a></li>
-					<li><a href="#">Заказать</a></li>
-					<li><a href="#">Команда</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-			</nav>
+			<div class="row">
+				<a href="index.html" class="logo left">
+					<p class="logo-brand">Монгольфьеркин и КО</p>
+				</a>
+				<nav class="main-nav right">
+					<ul class="right">
+						<li><a href="#" class="active">Кто мы</a></li>
+						<li><a href="#">Фотографии</a></li>
+						<li><a href="#">План полета</a></li>
+						<li><a href="#">Заказать</a></li>
+						<li><a href="#">Команда</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	</footer>
 <!--Footer-->	
