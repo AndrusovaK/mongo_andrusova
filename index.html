@@ -97,7 +97,7 @@
 				<div class="row">
 					<div class="col12">
 						<h3 class="section-title center">Галерея</h3>
-						<div class="carousel">
+						<div class="carousel center">
 							<div class="gallery_item"><img src="" alt=""></div>
 							<div class="gallery_item"><img src="" alt=""></div>
 							<div class="gallery_item"><img src="" alt=""></div>
@@ -118,29 +118,29 @@
 					<div class="col12">
 						<h3 class="section-title center">Как проходят полеты</h3>
 						<div class="flight-stages">
-							<div class="flight-stage-item flight-stage-item1">
-								<p class="flight-stage-text"></p>
-								<span class="flight-stage-number"></span>
+							<div class="flight-stage-item flight-stage-item1 center">
+								<p class="flight-stage-text">Взлет</p>
+								<span class="flight-stage-number">1</span>
 							</div>
 							
-							<div class="flight-stage-item flight-stage-item2">
-								<p class="flight-stage-text"></p>
-								<span class="flight-stage-number"></span>
+							<div class="flight-stage-item flight-stage-item2 center">
+								<p class="flight-stage-text">Набираем высоту</p>
+								<span class="flight-stage-number">2</span>
 							</div>
 							
-							<div class="flight-stage-item flight-stage-item3">
-								<p class="flight-stage-text"></p>
-								<span class="flight-stage-number"></span>
+							<div class="flight-stage-item flight-stage-item3 center">
+								<p class="flight-stage-text">Летаем</p>
+								<span class="flight-stage-number">3</span>
 							</div>
 							
-							<div class="flight-stage-item flight-stage-item4">
-								<p class="flight-stage-text"></p>
-								<span class="flight-stage-number"></span>
+							<div class="flight-stage-item flight-stage-item4 center">
+								<p class="flight-stage-text">Снижаемся</p>
+								<span class="flight-stage-number">4</span>
 							</div>
 							
-							<div class="flight-stage-item flight-stage-item5">
-								<p class="flight-stage-text"></p>
-								<span class="flight-stage-number"></span>
+							<div class="flight-stage-item flight-stage-item5 center">
+								<p class="flight-stage-text">Садимся</p>
+								<span class="flight-stage-number">5</span>
 							</div>
 						</div>
 					</div>
@@ -164,13 +164,10 @@
 				</div>
 			</div>
 		</div>
-	
-	
-<!--Один контейнер для нескольких блоков-->
-		<div class="container">
 
 		<!--Рассчитать стоимость-->	
-			<section class="cost" id="">			
+		<section class="cost" id="">			
+			<div class="container">
 				<div class="row">
 					<div class="cost-info col6">
 						<h3 class="section-title left-underline">Рассчитать стоимость</h3>
@@ -178,7 +175,7 @@
 						<p class="cost-text">Оболочка начинает заполняться теплым воздухом, и аэростат делает первый «вздох».</p>
 						<p class="cost-text">Выбирайте, куда мы полетим сегодня!</p>
 					</div>
-					
+						
 					<div class="cost-form col6">
 						<form action="" method="post">	
 							<p>
@@ -190,7 +187,7 @@
 									<option value="route4">Девяткино-Капеасалми</option>
 								</select>
 							</p>
-							
+								
 							<p>
 								<label for="people-number-field">Количество человек</label>
 								<select name="people-number" id="people-number-field">
@@ -199,7 +196,7 @@
 									<option value="3">3</option>
 									<option value="4">4</option>
 								</select>
-								
+									
 								<label for="children-field">Из них дети</label>
 								<select name="children" id="children-field">
 									<option value="1">1</option>
@@ -208,12 +205,12 @@
 									<option value="4">4</option>
 								</select>
 							</p>
-							
+								
 							<p>
 								<label for="name-field">Имя и Фамилия</label>
 								<input type="text" name="name" id="name-field">
 							</p>
-							
+								
 							<p>
 								<label for="phone-field">Телефон</label>
 								<input type="text" name="phone" id="phone-field">
@@ -225,14 +222,16 @@
 						</form>
 					</div>			
 				</div>
-			</section>
+			</div>
+		</section>
 <!--Рассчитать стоимость-->	
 				
-			<div class="details">
+		<section class="details">
+			<div class="container">
 				<div class="row">
-		
-		<!--Способы оплаты-->	
-					<section class="payments col6">
+							
+<!--Способы оплаты-->	
+					<div class="payments col6">
 						<h3 class="section-title left-underline">Способы оплаты</h3>
 						<div class="cash">
 							<p class="payments-method">Наличными</p>
@@ -246,12 +245,11 @@
 							<p>— по телефону: +7 (812) 640-19-39,<br>— или по почте:<br>mnebyvnebo@gmail.com</p>
 							<p>Оплачивая услугу курьером, Вы получаете все документы подтверждающие оплату.</p>
 						</div>				
-					</section>	
-		<!--Способы оплаты-->	
-				
-		<!--Частые вопросы-->								
-
-					<section class="faq col6">
+					</div>	
+<!--Способы оплаты-->	
+					
+<!--Частые вопросы-->							
+					<div class="faq col6">
 						<h3 class="section-title left-underline">Частые вопросы</h3>
 						<div class="question">
 							<p class="question-title">Что взять с собой в полет?</p>
@@ -269,32 +267,30 @@
 							<p class="question-title">А полет – это действительно так здорово?</p>
 							<p class="question-answer">Это в тысячу раз лучше шоколада</p>
 						</div>
-					</section>
-
-		<!--Частые вопросы-->
+					</div>
+					
+<!--Частые вопросы-->
 				</div>
-			</div>			
-			
-		</div>	
-<!--Один контейнер для нескольких блоков-->
+			</div>
+		</section>			
 
 <!--Статистика-->
 		<section class="statistic">
 			<div class="container">
 				<div class="row">
-					<div class="statistic-item col3">
+					<div class="statistic-item col3 center">
 						<span class="number-circle">700</span>
 						<p>Полетов в год</p>
 					</div>
-					<div class="statistic-item col3">
+					<div class="statistic-item col3 center">
 						<span class="number-circle">3000</span>
 						<p>Средняя дальность в метрах</p>
 					</div>
-					<div class="statistic-item col3">
+					<div class="statistic-item col3 center">
 						<span class="number-circle">3</span>
 						<p>Воздушных шара</p>
 					</div>
-					<div class="statistic-item col3">
+					<div class="statistic-item col3 center">
 						<span class="number-circle">12</span>
 						<p>Человек в команде</p>
 					</div>
@@ -303,57 +299,57 @@
 		</section>
 <!--Статистика-->
 
-<!--Один контейнер для нескольких блоков-->
-		<div class="container">
-
 <!--Инструкторы-->
-			<section class="team">
+		<section class="team">
+			<div class="container">
 				<div class="row">
-					<div class="col12">
-						<h3 class="section-title center">Команда инструкторов</h3>
+					<div class="col12 center">
+						<h3 class="section-title">Команда инструкторов</h3>
 					</div>
 				</div>
 				<div class="row">
-					<div class="team-member col3">
+					<div class="team-member col3 center">
 						<img src="" alt="">
 						<p class="member-name">Мария Мариева</p>
 						<p class="member-job">Старший пилот</p>
 					</div>
-					<div class="team-member col3">
+					<div class="team-member col3 center">
 						<img src="" alt="">
 						<p class="member-name">Надежда Надеждова</p>
 						<p class="member-job">Второй пилот</p>
 					</div>
-					<div class="team-member col3">
+					<div class="team-member col3 center">
 						<img src="" alt="">
 						<p class="member-name">Ирина Иринова</p>
 						<p class="member-job">Авиадиспетчер</p>
 					</div>
-					<div class="team-member col3">
+					<div class="team-member col3 center">
 						<img src="" alt="">
 						<p class="member-name">Алена Аленова</p>
 						<p class="member-job">Авиатехник</p>
 					</div>
 				</div>
-			</section>		
+			</div>
+		</section>		
 <!--Инструкторы-->
 	
 <!--Отзывы-->
-			<section class="reviews">
+		<section class="reviews">
+			<div class="container">
 				<div class="row">
-					<div class="col12">
-						<h3 class="section-title center">Отзывы</h3>
+					<div class="col12 center">
+						<h3 class="section-title">Отзывы</h3>
 					</div>
 				</div>
 				<div class="row">
-					<div class="review-item col6">
+					<div class="review-item col6 center">
 						<img src="" alt="">
 						<blockquote>
 							<cite>Ольга Алексеева</cite>
 							<p>Оооо это было чудесно!!! Я не знала что воздушные шары такие огромные. Забавно, большой шар и маленькая корзинка. Полет восхитительный, выше всяких похвал. Мы побывали в самом красивом месте на Земле - в небе, оттуда открываются потрясающие виды.</p>
 						</blockquote>
 					</div>
-					<div class="review-item col6">
+					<div class="review-item col6 center">
 						<img src="" alt="">
 						<blockquote>
 							<cite>Артем Рыбкин</cite>
@@ -361,10 +357,10 @@
 						</blockquote>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 <!--Отзывы-->				
-		</div>
-<!--Один контейнер для нескольких блоков-->
+
 
 <!--Контакты-->		
 		<section class="contacts">
@@ -390,7 +386,7 @@
 						<span class="office-phone">746-67-33</span>
 					</div>
 					<div class="internet col4">
-						<a href=""></a>
+						<a href="">mnebyvnebo@gmail.com</a>
 						<p class="socials">
 							<a href=""></a>
 							<a href=""></a>
