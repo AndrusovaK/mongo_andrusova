@@ -39,3 +39,9 @@ div[class*="column"] {
 	display: table;
 	clear: both;
 }
+
+/*Главная страница*/
+
+.main-nav li {
+	display: inline-block;
+}
