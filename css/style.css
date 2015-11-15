@@ -1,3 +1,26 @@
+@font-face { 
+      font-family: 'WebSymbolsLigaRegular';
+      src: url('../fonts/websymbolsligaregular.woff') format('woff'),
+           url('../fonts/websymbolsligaregular.ttf') format('truetype'),
+           url('../fonts/websymbolsligaregular.svg#WebSymbolsRegular') format('svg');
+}
+
+html, body{
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+	color: #444;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, blockquote, figure {
+	padding: 0;
+	margin: 0;
+}
+
 .center {
 	text-align: center;
 }
@@ -22,7 +45,6 @@
 
 div[class*="col"] {
 	float: left; 
-	padding: 15px; 
 	box-sizing: border-box;
 } 
 
@@ -41,100 +63,572 @@ section, .timer, .advantages,
 	float: right;
 }
 
-.clearfix:after {
+.row:after, .clearfix:after {
 	content: "";
 	display: table;
 	clear: both;
 }
 
-/**/
+.promo-title, .section-title, .section-title_left {
+	font-weight: 500;
+} 
+
+
+/*Header*/
 .page-header, .page-footer {
 	min-height: 70px;
+	background-color: #444;
+}
+
+.page-header a, .page-footer a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.logo {
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 70px;
 }
 
 .main-nav li {
 	display: inline-block;
+    margin-right: 12px;
+	line-height: 70px;
+}
+
+.main-nav li:last-child {
+	margin-right: 0;
+} 
+
+.main-nav a {
+	padding: 10px 9px;
+	border: 1px solid transparent;
+	line-height: 32px;
+}
+
+.main-nav a:hover {
+	border: 1px solid #ffffff;
 }
 
 
-/**/
+/*Промо*/
 .promo {
 	min-height: 645px;
+	background: url('../img/bg_promo-block.jpg') no-repeat 50% 0;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding-top: 170px;
+	position: relative;
+}
+
+.promo-title {
+	font-size: 66px;
+	color: #fff;
+}
+
+.promo-btn {
+	position: absolute;
+	bottom: 97px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	text-decoration: none;
+	color: #fff;
+	width: 118px;
+	height: 38px;
+	border: 1px solid  #fff;
+	line-height: 40px;
+}
+
+.promo:after {
+	content: "";
+	position: absolute;
+	background: url('../img/arrow-down.svg') no-repeat;
+	width: 18px;
+	height: 29px;
+	bottom: 32px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 }
 
 
-/**/
+/*Преимущества*/
 .advantages {
-	min-height: 227px;
+	min-height: 235px;
+	padding: 70px 0;
+}
+
+.advantage-item p {
+	display: inline-block;
+	width: 135px;
+	vertical-align: middle;
+	font-weight: 700;
+}
+
+.advantage-item img {
+	display: inline-block;
+	margin-right: 20px;
+	vertical-align: middle;
 }
 
 
-/**/
+/*О нас+видео*/
 .about-us {
-	min-height: 465px;
+	min-height: 460px;	
+	position: relative;
 }
 
+.about-us:after {
+	content: "";
+	display: block;
+	width: 1200px;
+	height: 1px;
+	background-color: #ccc;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.about-us .col4 {
+	padding-right: 30px;
+} 
+
+.section-title, .section-title_left {
+	font-size: 32px;
+	line-height: 26px;
+	margin-bottom: 73px;
+	position: relative;
+}
+
+.section-title_left:after, .section-title:after {
+	content: "";
+	width: 62px;
+	height: 6px;
+	position: absolute;
+	background-color: #3e98d7;
+	top: 44px;
+	left: 0;
+}
+
+.section-title:after {
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.about-us_text {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.about-us_text:last-child {
+	margin-top: 24px;
+}
+
+
+/*Галерея*/
 .gallery {
-	min-height: 550px;
+	min-height: 450px;
+	padding: 100px 0 90px;
 }
 
 
-/**/
+/*Как проходит полет*/
 .process {
-	min-height: 664px;
+	min-height: 650px;
+	background: url('../img/fly-line.png') no-repeat 50% 250px,
+				url('../img/bg_mountains.jpg') no-repeat 50% 100%;
+}
+
+.flight-stages {
+	position: relative;
+	height: 300px;
 }
 
 .flight-stage-item {
-	display: inline-block;
+	position: absolute;
+	min-height: 100px;
+	line-height: 26px;
+	font-weight: 500;
+	width: 100px;
 }
 
-/**/
+.flight-stage-item1 {
+	left: 0;
+	bottom: 0;
+}
+
+.flight-stage-item2 {
+	bottom: 45px;
+	left: 255px;
+}
+
+.flight-stage-item3 {
+	left: 46%;
+	top: 0;
+}
+
+.flight-stage-item4 {
+	bottom: 45px;
+	right: 255px;
+}
+
+.flight-stage-item5 {
+	bottom: 0;
+	right: 0;
+}
+
+.flight-stage-number {
+	color: #fff;
+	font-size: 20px;
+	display: block;
+	height: 65px;
+	margin-top: 10px;
+	padding-top: 10px;
+	background: url('../img/icon_baloon.svg') no-repeat 50% 0;
+}
+
+
+/*Обратный отсчет*/
 .timer {
 	min-height: 100px;
+	background-color: #f2f2f2;
+	font-size: 32px;
+	line-height: 100px;
+	font-weight: 500;
+	color: #26668e;
 }
 
 .count-time {
 	text-align: right;
 }
+
 .count-time p {
 	display: inline-block;
+	margin-left: 35px;
+}
+
+.count-time span {
+	font-size: 22px;
 }
 
 
 /**/
 .cost {
-	min-height: 550px;
+	min-height: 560px;
+	padding: 105px 0 155px;
+}
+
+.cost-info {
+	padding-right: 150px;
+}
+
+.cost-text {
+	margin-top: 24px;
+}
+
+.form-field {
+	display: block;
+	margin-bottom: 20px;
+}
+
+label {
+	display: inline-block;
+	width: 196px;
+	line-height: 40px;
+}
+
+.cost-form select, .cost-form input {
+	width: 355px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    height: 40px;
+	border: 1px solid  #d5d5d5;
+	border-radius: 5px;
+	float: right;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.cost-form input {
+	padding-left: 40px;
+}
+
+input[name="name"] {
+	background: url('../img/icon_fio.svg') no-repeat 10px 50%;
+}
+ 
+input[name="phone"] {
+	background: url('../img/icon_phone.svg') no-repeat 10px 50%;
+}
+
+.cost-form-cost {
+	padding: 17px 0;
+}
+
+.final-cost {
+	display: inline-block;
+	font-weight: 700;
+	vertical-align: middle;
+}
+
+.final-cost span {
+	display: inline-block;
+	font-size: 38px;
+	color: #f97e7e;
+	vertical-align: middle;
+	padding-left: 13px;
+}
+
+.cost-form-btn {
+	width: 165px;
+	height: 40px;
+	color: #fff;
+	font-weight: 700;
+	line-height: 40px;
+	background-color: #46b0dc;
+	border: none;
+	border-radius: 5px;
 }
 
 
 /**/
 .details {
-	min-height: 795px;
+	min-height: 790px;
+	padding-bottom: 85px;
+}
+
+.payments {
+	padding-right: 100px;
+}
+
+.payments-method {
+	font-size: 26px;
+	line-height: 24px;
+	margin-bottom: 30px;
+	margin-top: 55px;
+	font-weight: 500;
+}
+
+.payments-method p {
+	line-height: 24px;
+}
+
+.payments p:nth-child(3) {
+	padding: 30px 0;
+}
+
+.faq {
+	padding-right: 20px;
+}
+
+.question {
+	margin-bottom: 45px;
+}
+
+.question-title {
+	line-height: 24px;
+	font-weight: 600;
+	margin-bottom: 12px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.question-title:before {
+	content: "";
+	display: inline-block;
+	background-image: url(../img/icon_ask.svg);
+	width: 40px;
+	height: 34px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	margin-right: 17px;
+}
+
+.question-answer {
+	font-size: 16px;
+	line-height: 22px;
+	padding-left: 80px;
 }
 
 
-/**/
+/*Статистика*/
 .statistic {
 	min-height: 374px;
+	background: url('../img/bg_statistics.jpg') no-repeat 50% 0;
+	-webkit-background-size: 100%;
+	background-size: cover;
+	color: #fff;
+	font-weight: 500;
+	padding: 70px 0;
+}
+
+.number-circle {
+	display: inline-block;
+	font-size: 42px;
+	width: 160px;
+	height: 160px;
+	border: 6px solid #fff;
+	border-radius: 50%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	line-height: 160px;
+	margin-bottom: 20px;
+}
+
+.statistic-text {
+	font-size: 24px;
 }
 
 
-/**/
+/*Команда инструкторов*/
+
 .team {
 	min-height: 570px;
+	padding: 95px 0 105px;		
+}
+
+.member-name {
+	font-size: 22px;
+	line-height: 26px;
+	font-weight: 500;
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+.member-job {
+	font-weight: 500;
 }
 
 
-/**/
+/*Отзывы*/
 .reviews {
-	min-height: 475px;
+	min-height: 470px;
+	padding-bottom: 70px;	
 }
 
+.review-item cite {
+	font-size: 22px;
+	font-weight: 500;
+	padding: 25px 0;
+	font-style: normal;
+	display: inline-block;
+}
+
+.review-item p {
+	padding: 0 10px;
+	line-height: 24px;
+}
 
 /**/
 .contacts {
 	min-height: 445px;
+	background: url('../img/bg_contacts.jpg') no-repeat 50% 0;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 55px 0 60px;
 }
 
+.airport {
+	margin-bottom: 60px;
+}
 
+.airport-title {
+	font-size: 26px;
+	line-height: 26px;
+	font-weight: 500;
+}
 
+.airport-adress {
+	line-height: 26px;
+	font-weight: 500;
+	padding-top: 10px;
+}
+
+.airport-title:before {
+	content: "";
+	display: block;
+	width: 62px;
+	height: 62px;
+	background: url('../img/icon_plane.svg') no-repeat 50% 50%, #337ba0;
+	border-radius: 5px;
+	margin: 0 auto 25px;
+}
+
+.office {
+	font-weight: 500;
+	line-height: 26px;
+	position: relative;
+	padding-left: 55px;
+}
+
+.office:before {
+	content: "";
+	position: absolute;
+	background: url('../img/icon_place.svg') no-repeat 0 0;
+	left: 0;
+	width: 35px;
+	height: 50px;
+}
+
+.office-title {
+	font-size: 22px;
+	color: #2b2b2b;
+	margin-bottom: 10px;
+}
+
+.office-address {
+	font-size: 20px;
+	color: #525252;
+	margin-bottom: 15px;
+}
+
+.office-phone {
+	font-size: 26px;
+	color: #292929;
+}
+
+.email {
+	display: inline-block;
+	font-size: 22px;
+	line-height: 26px;
+	font-weight: 500;
+	color: #444444;
+	padding-bottom: 27px;
+}
+
+.email:before {
+	content: "";
+	display: inline-block;
+	background: url('../img/icon_envelop.svg') no-repeat;
+	width: 23px;
+	height: 17px;
+	margin-right: 20px;
+	vertical-align: middle;
+}
+
+.social {
+	font-family: 'WebSymbolsLigaRegular';
+	color: #444;
+	margin-right: 20px;
+	font-size: 22px;
+}
+
+.social:hover {
+	color: rgba(68,68,68,0.7);
+}
+
+.arrow-up {
+	background: url('../img/arrow-up.svg') no-repeat;
+	width: 28px;
+	height: 28px;
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+}

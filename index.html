@@ -3,19 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Монгольфьеркин</title>
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	
 	<!--header-->
-	<header class="page-header">
+	<header class="page-header" id="navigation">
 		<div class="container">
 			<div class="row">
-				<a href="index.html" class="logo left">
-					<p class="logo-brand">Монгольфьеркин и КО</p>
-				</a>
+				<a href="index.html" class="logo left">Монгольфьеркин и КО</a>
 				<nav class="main-nav right">
 					<ul class="right">
 						<li><a href="#" class="active">Кто мы</a></li>
@@ -35,12 +33,12 @@
 	<main>
 	
 <!--Промоблок-->
-		<section class="promo"> 
+		<section class="promo center"> 
 			<div class="container">
 				<div class="row">
 					<div class="col12">
-						<h1 class="promo-title center">Организация полетов на воздушных шарах</h1>
-						<a href="#" class="promo-btn center">Подробнее</a>
+						<h1 class="promo-title">Организация полетов<br>на воздушных шарах</h1>
+						<a href="#" class="promo-btn">Подробнее</a>
 					</div>
 				</div>
 			</div>
@@ -52,19 +50,19 @@
 			<div class="container">
 				<div class="row">
 					<div class="advantage-item col3">
-						<img src="" alt="">
+						<img src="img/icon_like.svg" alt="like" height="58">
 						<p>Современный надежный шар</p>
 					</div>
 					<div class="advantage-item col3">
-						<img src="" alt="">
+						<img src="img/icon_glasses.svg" alt="glasses" height="58" width="75">
 						<p>Обучение пилотированию</p>
 					</div>
 					<div class="advantage-item col3">
-						<img src="" alt="">
+						<img src="img/icon_photo.svg" alt="photo" height="58" width="65">
 						<p>Фотосъемка в полете</p>
 					</div>
 					<div class="advantage-item col3">
-						<img src="" alt="">
+						<img src="img/icon_binoculars.svg" alt="binoculars" height="58" width="72">
 						<p>Потрясающие виды</p>
 					</div>
 				</div>
@@ -77,7 +75,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col4">
-						<h3 class="section-title left-underline">Вкратце</h3>
+						<h3 class="section-title_left">Вкратце</h3>
 						<p class="about-us_text">Более 5 лет воздухоплавательная команда Нева-Аэро выполняет полёты на воздушных шарах для гостей и жителей Петербурга над одними из самых живописных мест России – Царским Селом и Павловском, возведенных в Пушкинском районе Санкт-Петербурга. </p>
 						<p class="about-us_text">Мы предлагаем полетать с нами!</p>
 					</div>
@@ -156,10 +154,10 @@
 						<p class="count-title">До ближайшего полета:</p>
 					</div>
 					<div class="count-time col8">
-						<p><span>2</span> дня</p>
-						<p><span>16</span> часов</p>
-						<p><span>8</span> минут</p>
-						<p><span>14</span> секунд</p>
+						<p>2 <span>дня</span></p>
+						<p>16 <span>часов</span></p>
+						<p>8 <span>минут</span></p>
+						<p>14 <span>секунд</span></p>
 					</div>
 				</div>
 			</div>
@@ -170,7 +168,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="cost-info col6">
-						<h3 class="section-title left-underline">Рассчитать стоимость</h3>
+						<h3 class="section-title_left">Рассчитать стоимость</h3>
 						<p class="cost-text">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки.</p>
 						<p class="cost-text">Оболочка начинает заполняться теплым воздухом, и аэростат делает первый «вздох».</p>
 						<p class="cost-text">Выбирайте, куда мы полетим сегодня!</p>
@@ -178,9 +176,9 @@
 						
 					<div class="cost-form col6">
 						<form action="" method="post">	
-							<p>
-								<label for="route-field">Маршрут полета</label>
-								<select name="route" id="route-field">
+							<p class="form-field clearfix">
+								<label for="route-field" class="">Маршрут полета:</label>
+								<select name="route" id="route-field" class="">
 									<option value="route1">Сестрорецк-Парнас</option>
 									<option value="route2">Всеволожск-Кудрово</option>
 									<option value="route3">Санкт-Петербург-Зеленогорск</option>
@@ -188,36 +186,28 @@
 								</select>
 							</p>
 								
-							<p>
-								<label for="people-number-field">Количество человек</label>
+							<p class="form-field clearfix">
+								<label for="people-number-field">Количество человек:</label>
 								<select name="people-number" id="people-number-field">
 									<option value="1">1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
 									<option value="4">4</option>
 								</select>
-									
-								<label for="children-field">Из них дети</label>
-								<select name="children" id="children-field">
-									<option value="1">1</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-								</select>
 							</p>
 								
-							<p>
-								<label for="name-field">Имя и Фамилия</label>
+							<p class="form-field clearfix">
+								<label for="name-field">Имя и Фамилия:</label>
 								<input type="text" name="name" id="name-field">
 							</p>
 								
-							<p>
-								<label for="phone-field">Телефон</label>
+							<p class="form-field clearfix">
+								<label for="phone-field">Телефон:</label>
 								<input type="text" name="phone" id="phone-field">
 							</p>
-							<div>
-								<p>Стоимость<span>9000</span></p>
-								<button type="submit">Полетели!</button>
+							<div class="cost-form-cost">
+								<p class="final-cost">Стоимость: <span>9000 P</span></p>
+								<button type="submit" class="cost-form-btn right">Полетели!</button>
 							</div>					
 						</form>
 					</div>			
@@ -232,7 +222,7 @@
 							
 <!--Способы оплаты-->	
 					<div class="payments col6">
-						<h3 class="section-title left-underline">Способы оплаты</h3>
+						<h3 class="section-title_left">Способы оплаты</h3>
 						<div class="cash">
 							<p class="payments-method">Наличными</p>
 							<p>Вы можете оплатить услугу,  приехав к нам в офис. Для этого Вам необходимо предупредить об этом:</p>
@@ -250,7 +240,7 @@
 					
 <!--Частые вопросы-->							
 					<div class="faq col6">
-						<h3 class="section-title left-underline">Частые вопросы</h3>
+						<h3 class="section-title_left">Частые вопросы</h3>
 						<div class="question">
 							<p class="question-title">Что взять с собой в полет?</p>
 							<p class="question-answer">Обязательно возьмите с собой теплую одежду и немного вкусной еды, которую не нужно разогревать, а еще термос горячим чаем. А мы обязательно дадим вам теплые пледы</p>
@@ -278,21 +268,21 @@
 		<section class="statistic">
 			<div class="container">
 				<div class="row">
-					<div class="statistic-item col3 center">
+					<div class="col3 center">
 						<span class="number-circle">700</span>
-						<p>Полетов в год</p>
+						<p class="statistic-text">Полетов в год</p>
 					</div>
-					<div class="statistic-item col3 center">
+					<div class="col3 center">
 						<span class="number-circle">3000</span>
-						<p>Средняя дальность в метрах</p>
+						<p class="statistic-text">Средняя<br>дальность в метрах</p>
 					</div>
-					<div class="statistic-item col3 center">
+					<div class="col3 center">
 						<span class="number-circle">3</span>
-						<p>Воздушных шара</p>
+						<p class="statistic-text">Воздушных<br>шара</p>
 					</div>
-					<div class="statistic-item col3 center">
+					<div class="col3 center">
 						<span class="number-circle">12</span>
-						<p>Человек в команде</p>
+						<p class="statistic-text">Человек<br>в команде</p>
 					</div>
 				</div>
 			</div>
@@ -309,22 +299,22 @@
 				</div>
 				<div class="row">
 					<div class="team-member col3 center">
-						<img src="" alt="">
+						<img src="img/team_marieva.png" alt="">
 						<p class="member-name">Мария Мариева</p>
 						<p class="member-job">Старший пилот</p>
 					</div>
 					<div class="team-member col3 center">
-						<img src="" alt="">
+						<img src="img/team_nadezdova.png" alt="">
 						<p class="member-name">Надежда Надеждова</p>
 						<p class="member-job">Второй пилот</p>
 					</div>
 					<div class="team-member col3 center">
-						<img src="" alt="">
+						<img src="img/team_irinova.png" alt="">
 						<p class="member-name">Ирина Иринова</p>
 						<p class="member-job">Авиадиспетчер</p>
 					</div>
 					<div class="team-member col3 center">
-						<img src="" alt="">
+						<img src="img/team_alenova.png" alt="">
 						<p class="member-name">Алена Аленова</p>
 						<p class="member-job">Авиатехник</p>
 					</div>
@@ -343,14 +333,14 @@
 				</div>
 				<div class="row">
 					<div class="review-item col6 center">
-						<img src="" alt="">
+						<img src="img/review_alekseeva.png" alt="" width="98" height="98">
 						<blockquote>
 							<cite>Ольга Алексеева</cite>
 							<p>Оооо это было чудесно!!! Я не знала что воздушные шары такие огромные. Забавно, большой шар и маленькая корзинка. Полет восхитительный, выше всяких похвал. Мы побывали в самом красивом месте на Земле - в небе, оттуда открываются потрясающие виды.</p>
 						</blockquote>
 					</div>
 					<div class="review-item col6 center">
-						<img src="" alt="">
+						<img src="img/review_ribkin.png" alt="" width="98" height="98">
 						<blockquote>
 							<cite>Артем Рыбкин</cite>
 							<p>Жене подарил полет на воздушном шаре. Сделал сюрприз на день рождения. Жена была в восторге, мне и самому понравилось, очень необычные ощущения от полета, хоть не самолет, а летит быстро, маршрут подобрали красивый. Cпасибо вам, нам все понравилось.</p>
@@ -368,7 +358,6 @@
 				<div class="row">
 					<div class="col12">
 						<div class="airport center">
-							<img src="" alt="" class="logo-plane">
 							<p class="airport-title">Запишите адрес аэропорта</p>
 							<p class="airport-adress">Всеволожск, улица Аэродромная 19а</p>
 						</div>
@@ -376,27 +365,30 @@
 				</div>
 				<div class="row">
 					<div class="office col4">
-						<p class="office-title">Наш офис в Питере</p>
+						<p class="office-title">Наш офис в Питере:</p>
 						<p class="office-address">Литейный 14Б<br>12:00 - 19:00</p>
 						<span class="office-phone">746-67-33</span>
 					</div>
 					<div class="office col4">
-						<p class="office-title">Наш офис во Всеволожске</p>
+						<p class="office-title">Наш офис во Всеволожске:</p>
 						<p class="office-address">Аэродромная 19а<br>12:00 - 19:00</p>
 						<span class="office-phone">746-67-33</span>
 					</div>
 					<div class="internet col4">
-						<a href="">mnebyvnebo@gmail.com</a>
-						<p class="socials">
-							<a href=""></a>
-							<a href=""></a>
-							<a href=""></a>
+						<a href="" class="email">mnebyvnebo@gmail.com</a>
+						<p>
+							<a class="social" href="">&#230;</a>
+							<a class="social" href="">&#228;</a>
+							<a class="social" href="">&#235;</a>
 						</p>
 					</div>
 				</div>
 			</div>
 		</section>
+		<a href="#navigation" class="arrow-up"></a>
 <!--Контакты-->	
+
+	</main>
 
 <!--Footer-->
 	<footer class="page-footer">
