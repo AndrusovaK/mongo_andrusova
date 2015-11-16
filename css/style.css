@@ -69,6 +69,10 @@ section, .timer, .advantages,
 	clear: both;
 }
 
+input, a {
+	outline: none;
+}
+
 .promo-title, .section-title, .section-title_left {
 	font-weight: 500;
 } 
@@ -136,7 +140,7 @@ section, .timer, .advantages,
 	height: 38px;
 	border: 1px solid  #fff;
 	line-height: 40px;
-	margin-top: 178px;
+	margin: 178px 0 64px;
 	z-index: 200;
 }
 
@@ -147,7 +151,7 @@ section, .timer, .advantages,
 	width: 18px;
 	height: 29px;
 	left: 43%;
-	bottom:-10px;
+	bottom: -64px;
 }
 
 
@@ -350,13 +354,17 @@ section, .timer, .advantages,
 	text-align: right;
 }
 
-.count-time p {
+.count-time div {
 	display: inline-block;
-	margin-left: 35px;
 }
 
-.count-time span {
+.measure {
 	font-size: 22px;
+	margin-right: 35px;
+}
+
+.measure-seconds {
+	margin-right: 0;
 }
 
 
