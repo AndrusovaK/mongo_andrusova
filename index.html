@@ -6,6 +6,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="slick/slick.css">
 </head>
 <body>
 	
@@ -81,7 +82,7 @@
 					</div>
 					<div class="col8">
 						<div class="video-container">
-							<iframe src="" frameborder="0"></iframe>
+							<iframe width="750" height="345" src="https://www.youtube.com/embed/aF_u-HvFCyA" frameborder="0" allowfullscreen></iframe>
 						</div>
 					</div>
 				</div>
@@ -95,13 +96,19 @@
 				<div class="row">
 					<div class="col12">
 						<h3 class="section-title center">Галерея</h3>
-						<div class="carousel center">
-							<div class="gallery_item"><img src="" alt=""></div>
-							<div class="gallery_item"><img src="" alt=""></div>
-							<div class="gallery_item"><img src="" alt=""></div>
-							<div class="gallery_item"><img src="" alt=""></div>
-							<div class="gallery_item"><img src="" alt=""></div>
-							<div class="gallery_item"><img src="" alt=""></div>			
+						<div class="slider">
+							<div class="carousel">
+								<div class="gallery_item"><img src="img/gallery1.jpg" alt="slider1"></div>
+								<div class="gallery_item"><img src="img/gallery2.jpg" alt="slider2"></div>
+								<div class="gallery_item"><img src="img/gallery3.jpg" alt="slider3"></div>
+								<div class="gallery_item"><img src="img/gallery4.jpg" alt="slider4"></div>
+								<div class="gallery_item"><img src="img/gallery1.jpg" alt="slider1"></div>
+								<div class="gallery_item"><img src="img/gallery2.jpg" alt="slider2"></div>			
+							</div>
+							<div class="carousel-nav">
+								<div class="prev"></div>
+								<div class="next"></div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -299,22 +306,22 @@
 				</div>
 				<div class="row">
 					<div class="team-member col3 center">
-						<img src="img/team_marieva.png" alt="">
+						<div class="member-avatar marieva"></div>
 						<p class="member-name">Мария Мариева</p>
 						<p class="member-job">Старший пилот</p>
 					</div>
 					<div class="team-member col3 center">
-						<img src="img/team_nadezdova.png" alt="">
+						<div class="member-avatar nadezdova"></div>
 						<p class="member-name">Надежда Надеждова</p>
 						<p class="member-job">Второй пилот</p>
 					</div>
 					<div class="team-member col3 center">
-						<img src="img/team_irinova.png" alt="">
+						<div class="member-avatar irinova"></div>
 						<p class="member-name">Ирина Иринова</p>
 						<p class="member-job">Авиадиспетчер</p>
 					</div>
 					<div class="team-member col3 center">
-						<img src="img/team_alenova.png" alt="">
+						<div class="member-avatar alenova"></div>
 						<p class="member-name">Алена Аленова</p>
 						<p class="member-job">Авиатехник</p>
 					</div>
@@ -412,5 +419,20 @@
 	</footer>
 <!--Footer-->	
 	
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script>
+		$(document).ready(function(){
+  			$('.carousel').slick({
+    			autoplay: true,
+				autoplaySpeed: 500,
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				prevArrow: $('.prev'),
+				nextArrow: $('.next'),
+  			});
+		});
+	</script>
 </body>
 </html>

@@ -147,7 +147,7 @@ section, .timer, .advantages,
 	width: 18px;
 	height: 29px;
 	left: 43%;
-	top: 75px;
+	bottom:-10px;
 }
 
 
@@ -232,6 +232,52 @@ section, .timer, .advantages,
 	min-height: 450px;
 	padding: 100px 0 90px;
 }
+
+.slider {
+	position: relative;
+	width: 1140px;
+	margin: 0 auto;
+}
+
+.carousel {
+	width: 1020px;
+	margin: 0 auto;
+}
+
+.prev {
+	position: absolute;
+	background: url(../img/arrow-left.svg) no-repeat 0 0;
+	width: 35px;
+	height: 33px;
+	z-index: 200;
+	left: 0;
+	top: 45%;
+}
+
+.prev:hover {
+	background: url(../img/arrow-left_hover.svg) no-repeat 0 0;
+	width: 35px;
+	height: 33px;
+	cursor: pointer;
+} 
+
+.next {
+	position: absolute;
+	background: url(../img/arrow-right.svg) no-repeat 0 0;
+	width: 35px;
+	height: 33px;
+	z-index: 200;
+	right: 0;
+	top: 45%;
+}
+
+.next:hover {
+	background: url(../img/arrow-right_hover.svg) no-repeat 0 0;
+	width: 35px;
+	height: 33px;
+	cursor: pointer;
+} 
+
 
 
 /*Как проходит полет*/
@@ -491,12 +537,39 @@ input[name="phone"] {
 	padding: 95px 0 105px;		
 }
 
+.member-avatar {
+	width: 160px;
+	height: 160px;
+	margin: 0 auto;
+}
+
+.member-avatar:hover {
+	background: url('../img/team_hover.png');
+	cursor: pointer;
+}
+
+.marieva {
+	background: url('../img/team_marieva.png') no-repeat;
+}
+
+.nadezdova {
+	background: url('../img/team_nadezdova.png') no-repeat;
+}
+
 .member-name {
 	font-size: 22px;
 	line-height: 26px;
 	font-weight: 500;
 	padding-top: 30px;
 	padding-bottom: 10px;
+}
+
+.irinova {
+	background: url('../img/team_irinova.png') no-repeat;
+}
+
+.alenova {
+	background: url('../img/team_alenova.png') no-repeat;
 }
 
 .member-job {
