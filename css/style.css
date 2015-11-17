@@ -289,6 +289,8 @@ input, a {
 	min-height: 650px;
 	background: url('../img/fly-line.png') no-repeat 50% 250px,
 				url('../img/bg_mountains.jpg') no-repeat 50% 100%;
+	-webkit-background-size: auto, contain;
+	background-size: auto, contain;
 }
 
 .flight-stages {
@@ -354,13 +356,21 @@ input, a {
 	text-align: right;
 }
 
+.time-wrap:nth-child(2) {
+	width: 122px;
+}
+
+.time-wrap:nth-child(n+3) {
+	width: 135px;
+}
+
 .count-time div {
 	display: inline-block;
 }
 
 .measure {
 	font-size: 22px;
-	margin-right: 35px;
+	
 }
 
 .measure-seconds {
