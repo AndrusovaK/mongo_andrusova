@@ -46,6 +46,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, blockquote, figure {
 div[class*="col"] {
 	float: left; 
 	box-sizing: border-box;
+	padding: 0 15px;
 } 
 
 section, .timer, .advantages,
@@ -205,7 +206,7 @@ input, a {
 	position: relative;
 }
 
-.section-title_left:after, .section-title:after {
+.section-title:after {
 	content: "";
 	width: 62px;
 	height: 6px;
@@ -213,12 +214,13 @@ input, a {
 	background-color: #3e98d7;
 	top: 44px;
 	left: 0;
-}
-
-.section-title:after {
-	left: 0;
 	right: 0;
 	margin: 0 auto;
+}
+
+.section-title_left:after {
+	left: 0;
+	margin: 0;
 }
 
 .about-us_text {
